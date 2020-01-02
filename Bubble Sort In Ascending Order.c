@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+void bubbleSortAsc(int A[], int n);
+void display(int A[],int n);
 int main(){
     int i, n=10;
     int A[10] = {81,69,75,41,91,38,29,67,55,22};
