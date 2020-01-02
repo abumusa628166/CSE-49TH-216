@@ -1,4 +1,6 @@
 #include<stdio.h>
+int insertionSortAsc(int A[],int n);
+void display(int A[],int n);
 int main(){
     int a[]={69,35,84,72,68,51,22,34,71,55};
     int i,n=10;
