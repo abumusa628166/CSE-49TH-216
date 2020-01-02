@@ -1,8 +1,9 @@
 #include <stdio.h>
-
+void bubbleSortAsc(int A[], int n);
+void display(int A[],int n);
 int main(){
     int i, n=10;
-    int A[10] = {81,69,75,41,91,38,29,67,55,85};
+    int A[10] = {81,69,75,41,91,38,29,67,55,22};
     printf("Unsorted Array\n");
     for(i=0;i<n;i++){
         printf("%d\t",A[i]);
@@ -12,13 +13,7 @@ int main(){
     bubbleSortAsc(A,n);
     return 0;
 }
-void display(int A[],int n){
-    int i;
-    for(i=0;i<n;i++){
-        printf("%d\t",A[i]);
-    }
-    printf("\n");
-}
+
 void bubbleSortAsc(int A[], int n)
 {
     int i, j,temp;
@@ -32,4 +27,11 @@ void bubbleSortAsc(int A[], int n)
         }
     }
     display(A,n);
+}
+void display(int A[],int n){
+    int i;
+    for(i=0;i<n;i++){
+        printf("%d\t",A[i]);
+    }
+    printf("\n");
 }
